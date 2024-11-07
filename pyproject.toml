@@ -1,0 +1,30 @@
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"  # Make isort compatible with Black's formatting
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = true
+known_first_party = ["the-arranger"]  # Adjust to your package name
+known_third_party = ["requests", "boto3"]  # Specify third-party libraries
+
+[tool.pylama]
+skip = "*/tests/*,venv,*/venv/*"  # Skip the tests folder
+linters = "pycodestyle,pylint,pyflakes"
+ignore = "E203,E266,E501,W503,C901" # Ignore specific PEP8 warnings (e.g., line length)
+format = "pylint"
+max_line_length = 79
+
+[tool.pylama.linter.pyflakes]
+builtins = "_"
+
+[tool.pylama.linter.pycodestyle]
+max_line_length = 79
+
+[tool.pylama.linter.pylint]
+max_line_length = 79
+disable = "R"
+

@@ -1,0 +1,12 @@
+version: "3"
+services:
+  AI_AGENT_NAME-dev-repo:
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${AWS_ECR_REPOSITORY}:latest
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: AI_AGENT_NAME
+    environment:
+      - ENV=dev
+
+
