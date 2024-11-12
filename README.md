@@ -1,4 +1,4 @@
-# Doc Search uisng LLM to OpenSearch (AI_AGENT Architecture) #
+# Doc Search LLM to OpenSearch (AI_AGENT Architecture) #
 
 ### Packages
 
