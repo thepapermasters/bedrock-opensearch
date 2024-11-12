@@ -1,4 +1,4 @@
-# Computer Vision to OpenSearch (AI_AGENT_NAME) #
+# Doc Search uisng LLM to OpenSearch (AI_AGENT Architecture) #
 
 ### Packages
 
